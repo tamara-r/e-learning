@@ -22,6 +22,7 @@ import { deepPurple } from '@mui/material/colors';
 import { removeItem, removeItems } from '../redux/actions/cartActions';
 import MetaData from '../components/MetaData';
 import Header from '../components/Header';
+import { CartFooter } from '../components/CartFooter';
 
 const ColorButton = styled(Button) (({ theme }) => ({
   color: '#fff',
@@ -81,7 +82,6 @@ const Cart = () => {
       sx={{ display: 'flex', justifyContent: 'center' }} >
       <MetaData title={'Cart'} />
       <Header />
-      <Toolbar />
 
       { item.length > 0 ? (
         <Fragment>
@@ -133,14 +133,17 @@ const Cart = () => {
               </ColorButton>
             </Typography>
           </Box>
-      
+          <CartFooter />
         </Fragment>
       )
       : (
-        <Typography 
-          sx={{ pt: 30, fontSize: '30px', fontWeight: 'bold' }}>
-          Your Cart is Empty!
-        </Typography>
+        <Fragment>
+          <Typography 
+            sx={{ pt: 30, fontSize: '30px', fontWeight: 'bold' }}>
+            Your Cart is Empty!
+          </Typography>
+          <CartFooter />
+        </Fragment>
       )}
       
     </Box>
