@@ -1,0 +1,197 @@
+[
+  {
+    "id": 0,
+    "name": "Learn Python: The Complete Python Programming Course",
+    "price": "19.99",
+    "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
+    "category": "Python",
+    "ratings": 4.3,
+    "num_of_reviews": 3617,
+    "num_of_students": 20201,
+    "images": [
+      {
+        "url": "https://img-b.udemycdn.com/course/480x270/396876_cc92_7.jpg"
+      }
+    ],
+    "teacher": "Edwin Diaz",
+    "course_total": "2h 36m",
+    "goals": [
+      "To learn the python language",
+      "To learn the CORE skills to understand any programming language"
+    ],
+    "lessons": [
+      "Programming Fundamentals",
+      "Getting Started with Python",
+      "Python Basics",
+      "Conditional Structures",
+      "Functions",
+      "Working with Files"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 1,
+    "name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    "price": "89.99",
+    "description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
+    "category": "React",
+    "ratings": 4.6,
+    "num_of_reviews": 164508,
+    "num_of_students": 642194,
+    "images": [
+      {
+        "url": "https://img-b.udemycdn.com/course/480x270/1362070_b9a1_2.jpg"
+      }
+    ],
+    "teacher": "Maximilian Schwarzmüller",
+    "course_total": "49h 24m",
+    "goals": [
+      "Build powerful, fast, user-friendly and reactive web apps",
+      "Apply for high-paid jobs or work as a freelancer in one the most-demanded sectors you can find in web dev right now",
+      "Provide amazing user experiences by leveraging the power of JavaScript with ease",
+      "Learn all about React Hooks and React Components"
+    ],
+    "lessons": [
+      "Getting Started",
+      "JavaScript Refresher",
+      "React Components",
+      "React State",
+      "Rendering lists",
+      "React Styling",
+      "Debugging React"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 2,
+    "name": "Mastering Modern React with Redux State Management",
+    "price": "89.99",
+    "description": "Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks!",
+    "category": "React",
+    "ratings": 4.6,
+    "num_of_reviews": 77304,
+    "num_of_students": 274556,
+    "images": [
+      {
+        "url": "https://img-b.udemycdn.com/course/480x270/705264_caa9_13.jpg"
+      }
+    ],
+    "teacher": "Stephen Grader",
+    "course_total": "50h 20m",
+    "goals": [
+      "Create dynamic web apps using the latest in web technology",
+      "Practice your skills with many large projects, exercises, and quizzes",
+      "Become fluent in the toolchain supporting React, including NPM, Webpack, Babel, and ES6/ES2015 Javascript syntax",
+      "Master the fundamentals concepts behind React and Redux"
+    ],
+    "lessons": [
+      "Let's Dive In!",
+      "Build Content with JSX",
+      "Working with Props",
+      "Working with State",
+      "Understanding Lifecycle Methods",
+      "Integrating React with Redux",
+      "React Navigation"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 3,
+    "name": "Vue - The Complete Guide (incl. Router & Composition API)",
+    "price": "84.99",
+    "description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
+    "category": "Vue",
+    "ratings": 4.7,
+    "num_of_reviews": 70111,
+    "num_of_students": 205874,
+    "images": [
+      {
+        "url": "https://img-c.udemycdn.com/course/480x270/995016_ebf4_3.jpg"
+      }
+    ],
+    "teacher": "Maximilian Schwarzmüller",
+    "course_total": "31h 50m",
+    "goals": [
+      "Build amazing Vue.js Applications - all the Way from Small and Simple Ones up to Large Enterprise-level Ones",
+      "Leverage Vue.js in both Multi- and Single-Page-Applications (MPAs and SPAs)",
+      "Understand the Theory behind Vue.js and use it in Real Projects",
+      "earn the latest version of Vue (Vue 3), including the brand-new Composition API"
+    ],
+    "lessons": [
+      "Getting Started",
+      "Basics and Core Concepts",
+      "Vue Behind the Scenes",
+      "Understanding Components",
+      "Vuex",
+      "Vue and Authentication",
+      "Composition API"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 4,
+    "name": "Java Programming Masterclass covering Java 11 & Java 17",
+    "price": "84.99",
+    "description": "Learn Java In This Course And Become a Computer Programmer. Obtain valuable Core Java Skills And Java Certification",
+    "category": "Java",
+    "ratings": 4.5,
+    "num_of_reviews": 171068,
+    "num_of_students": 723878,
+    "images": [
+      {
+        "url": "https://img-c.udemycdn.com/course/480x270/533682_c10c_4.jpg"
+      }
+    ],
+    "teacher": "Tim Buchalka",
+    "course_total": "80h 23m",
+    "goals": [
+      "Learn the core Java skills needed to apply for Java developer positions in just 14 hours.",
+      "Be able to demonstrate your understanding of Java to future employers",
+      "Be able to sit for and pass the Oracle Java Certificate exam if you choose.",
+      "Obtain proficiency in Java 8 and Java 11."
+    ],
+    "lessons": [
+      "Tool Setup",
+      "OOP - Part One",
+      "OOP - Part Two",
+      "Java Generics",
+      "Java Abstract Classes",
+      "Java Interfaces",
+      "Java Database"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 5,
+    "name": "Build Web Apps with Vue JS 3 & Firebase",
+    "price": "84.99",
+    "description": "Learn Vue JS 3 & Firebase by creating & deploying dynamic web apps (including Authentication)",
+    "category": "Vue",
+    "ratings": 4.8,
+    "num_of_reviews": 6717,
+    "num_of_students": 27118,
+    "images": [
+      {
+        "url": "https://img-c.udemycdn.com/course/480x270/1639836_a03e_5.jpg"
+      }
+    ],
+    "teacher": "The Net Ninja",
+    "course_total": "31h 30m",
+    "goals": [
+      "Learn how to create Vue 3 applications from the ground-up",
+      "Get hands-on & in-depth experience using the latest Vue 3 features (such as the Composition API)",
+      "Build & deploy 4 real-world web apps with Vue & Firebase",
+      "Learn how to implement an authentication system into your Vue js apps using Firebase Auth"
+    ],
+    "lessons": [
+      "Introduction & Setup",
+      "Basics and Core Concepts",
+      "Vue CLI",
+      "Vue Composition API",
+      "Vue Router",
+      "Firebase Basics",
+      "Build and Deploy App"
+    ],
+    "language": "English"
+  }
+]
