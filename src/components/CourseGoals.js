@@ -12,7 +12,7 @@ const CourseGoals = ({ goals }) => {
 
   const goal = goals.map((goal, index) => {
     return (
-      <ListItem disablePadding key={index}>
+    <ListItem disablePadding key={`${index}-${goal}`}>
         <ListItemIcon>
           <CheckIcon fontSize='medium'/>
         </ListItemIcon>

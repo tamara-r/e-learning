@@ -44,14 +44,20 @@ const Home = () => {
   }
 
   return (
-    <Box sx={{ display: 'flex' }} >
+    <Box sx={{ 
+      display: 'flex',
+      flexGrow: 1,
+      justifyContent: 'center',
+    }} >
       <MetaData title={'Home'} />
       <Header onChange={handleChange} />
       <Box
         component="main"
         sx={{
-          py: 10,
-          ml: 18,
+          display: 'flex', 
+          flexGrow: 1,
+          justifyContent: 'center',
+          py: 10
         }}
       >
         <Toolbar />

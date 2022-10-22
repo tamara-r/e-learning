@@ -7,12 +7,7 @@ import ProductCard from './ProductCard';
 const Products = ({ products }) => {
 
   return (
-    <Box
-      sx={{
-        flexGrow: 1,
-        ml: 'auto',
-      }}
-    >
+    <Box>
       <Grid
         container
         spacing={{ xs: 1, sm: 3, md: 3 }}
@@ -20,9 +15,11 @@ const Products = ({ products }) => {
       >
         
         {products &&
-          products.map((product) => {
+          products.map((product, index) => {
             return (
-              <div style={{margin: '20px'}}>
+              <div 
+                style={{margin: '30px 60px 0 60px'}} 
+                key={`${product.id}--${index}`}>
                 <ProductCard product={product} key={product.id}/>
               </div>
               

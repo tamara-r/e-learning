@@ -12,7 +12,7 @@ const CourseOverview = ({ lessons }) => {
 
   const lesson = lessons.map((lesson, index) => {
     return (
-      <ListItem disablePadding key={index}>
+      <ListItem disablePadding key={`${index}-${lesson}`}>
         <ListItemIcon>
           <SchoolIcon fontSize='medium'/>
         </ListItemIcon>
