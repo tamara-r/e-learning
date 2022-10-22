@@ -30,15 +30,13 @@ const ProductCard = ({ product }) => {
             <Typography 
               gutterBottom 
               variant="h6" 
-              component="div" 
               sx={{ textAlign: "center" }}>
               <Link 
                 to={`/product/${product.id}`}
                 style={{color: deepPurple[500]}}>{product.name}</Link>
             </Typography>
 
-            <Typography 
-              variant="body2" 
+            <Typography  
               color="text.secondary" 
               sx={{ textAlign: "center" }}>
               { product.teacher }

@@ -32,14 +32,12 @@ const Ratings = ({ value, size, justifyContent, fontSize }) => {
 
       <Grid item>
         {isHovering ? (
-          <Typography 
-            variant="body" 
+          <Typography  
             sx={{ color: orange[500], ml: 1, fontWeight: 'bold', fontSize: fontSize }}>
             { value }
           </Typography>
         ): (
           <Typography 
-            variant="body" 
             sx={{ color: orange[500], ml: 1, fontWeight: 'bold', fontSize: fontSize, opacity: 0 }}>
             { value }
           </Typography>
