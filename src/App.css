@@ -1,5 +1,5 @@
 .text-orange:hover {
-  color: #f59e0b !important;
+  color: #ff9800 !important;
   transition: color 1s ease-in-out;
 }
 
@@ -21,4 +21,12 @@
   100% {
     background-position: -4000px 0;
   }
+}
+
+.toast-message {
+  background: #b39ddb;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 18px;
 }

@@ -10,9 +10,9 @@ import CheckIcon from '@mui/icons-material/Check';
 
 const CourseGoals = ({ goals }) => {
 
-  const goal = goals.map(goal => {
+  const goal = goals.map((goal, index) => {
     return (
-      <ListItem disablePadding>
+      <ListItem disablePadding key={index}>
         <ListItemIcon>
           <CheckIcon fontSize='medium'/>
         </ListItemIcon>

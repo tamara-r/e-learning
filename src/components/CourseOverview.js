@@ -10,9 +10,9 @@ import SchoolIcon from '@mui/icons-material/School';
 
 const CourseOverview = ({ lessons }) => {
 
-  const lesson = lessons.map(lesson => {
+  const lesson = lessons.map((lesson, index) => {
     return (
-      <ListItem disablePadding>
+      <ListItem disablePadding key={index}>
         <ListItemIcon>
           <SchoolIcon fontSize='medium'/>
         </ListItemIcon>

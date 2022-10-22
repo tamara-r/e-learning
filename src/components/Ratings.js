@@ -26,7 +26,7 @@ const Ratings = ({ value, size, justifyContent, fontSize }) => {
           size={size}
           value={value}
           readOnly
-          sx={{ bgColor: orange[400] }}
+          sx={{ bgColor: orange[600] }}
         />
       </Grid>
 

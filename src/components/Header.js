@@ -36,15 +36,17 @@ const Header = ({ onChange }) => {
           <SearchBar onChange={onChange}/>
           {/* <Box sx={{ flexGrow: 1 }} /> */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              sx={{ mr: 2, flexDirection: 'end' }} >
-              <Badge badgeContent={cartItems.length} color="secondary">
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>
+            <Link to={'/cart'} style={{ color: 'white'}} className='text-orange'>
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                sx={{ mr: 2, flexDirection: 'end' }} >
+                <Badge badgeContent={cartItems.length} color="secondary">
+                  <ShoppingCartIcon />
+                </Badge>
+              </IconButton>
+            </Link>
 
             <Typography sx={{ pt: 1.5 }}>
               {cartItems
