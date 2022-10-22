@@ -15,6 +15,7 @@ import ProductDescription from '../components/ProductDescription';
 import Button from '../components/Button';
 import MetaData from '../components/MetaData';
 import ProductHeader from '../components/ProductHeader';
+import LearningGoals from '../components/LearningGoals';
 
 const ProductDetails = () => {
 
@@ -94,7 +95,9 @@ const ProductDetails = () => {
 
         <Grid container>
           <Grid item xs={12} sm={6} md={6}>
-            nesto
+            {products[id] && (
+              <LearningGoals goals={products[id].goals} />
+            )}
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
             nesto
