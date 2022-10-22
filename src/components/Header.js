@@ -24,21 +24,19 @@ const Header = ({ onChange }) => {
 
   return (
     <Fragment>
-
-    
-    <AppBar 
-      component={'nav'} 
-      sx={{ bgcolor: deepPurple[500] }} 
-      className='animation-header__background'>
+      <AppBar 
+        component={'nav'} 
+        sx={{ bgcolor: deepPurple[500] }} 
+        className='animation-header__background'>
       
         <Toolbar 
-          sx={{ justifyContent: 'space-between'}}>
+          sx={{ display: 'flex', justifyContent: 'space-between'}}>
           <Link to={'/'} style={{ color: 'white'}} className='text-orange'>
             <Typography style={{ fontSize: '18px' }}>CodeSkillSchool</Typography>
           </Link>
           {currentPath === '/' ? <SearchBar onChange={onChange}/> : null }
           {/* <Box sx={{ flexGrow: 1 }} /> */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ display: { xs: 'flex', md: 'flex' } }}>
             <Link to={'/cart'} style={{ color: 'white'}} className='text-orange'>
               <IconButton
                 size="large"
@@ -59,7 +57,7 @@ const Header = ({ onChange }) => {
           </Box>
         </Toolbar>
       
-    </AppBar>
+      </AppBar>
     </Fragment>
   );
 };
