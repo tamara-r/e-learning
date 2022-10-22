@@ -66,7 +66,7 @@ const Cart = () => {
           <img src={item.image.url} style={{width: '36px', height: '36px'}} />
         </ListItemIcon>
         <ListItemText 
-          primary={`${item.name} - ${item.price} $`}
+          primary={`${item.name} - $${item.price}`}
           sx={{ fontSize: '24px' }} />
         <ListItemButton onClick={() => removeItemFromCart(item.product)}>
           <ListItemIcon>
