@@ -52,9 +52,9 @@ const Header = ({ onChange }) => {
             </Link>
 
             <Typography sx={{ pt: 1.5 }}>
-              {cartItems
+              $ {cartItems
                 .reduce((acc, item) => acc + 1 * item.price, 0)
-                .toFixed(2)}{' '} $
+                .toFixed(2)}{' '}
             </Typography>
           </Box>
         </Toolbar>

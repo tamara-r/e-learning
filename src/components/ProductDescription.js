@@ -31,7 +31,7 @@ const ProductDescription = ({ description, price, children, value, teacher }) =>
 
       <Grid item sx={{ my: 3 , justifyContent: 'center'}}>
         <Typography variant="h3" gutterBottom>
-          { price } $
+          ${ price } 
         </Typography>
         { children } 
       </Grid>
