@@ -54,7 +54,7 @@ const Cart = () => {
     dispatch(removeItems());
     navigate("/");
     toast.success('Happy Learning!', {
-      position: toast.POSITION.TOP_CENTER,
+      position: toast.POSITION.BOTTOM_CENTER,
     });
   }
 
@@ -76,7 +76,6 @@ const Cart = () => {
     )
   })
   
-
   return (
     <Box 
       sx={{ display: 'flex', justifyContent: 'center' }} >
