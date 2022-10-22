@@ -25,7 +25,7 @@ const ProductDescription = ({ description, price, children, value, teacher }) =>
 
       <Typography  
         color="text.secondary"
-        sx={{ mt: 2 }}>
+        sx={{ mt: 2, justifyContent: 'justify' }}>
         { description }
       </Typography>
 
