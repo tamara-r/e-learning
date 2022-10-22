@@ -8,26 +8,15 @@
 
 - Clone the Repo
 
-```scss
-[public] git clone https://github.com/tamara-r/e-learning.git e-learning
-
-OR
-
+```html
+[public] git clone https://github.com/tamara-r/e-learning.git e-learning OR
 [ssh] git clone git@github.com:tamara-r/e-learning.git e-learning
 ```
 
-- Go to directory
+- Go to directory: `cd e-learning`
 
-```css
-cd e-learning
-```
+- Install all dependencies using command `npm install`
 
-- Install all dependencies
-
-```css
-npm install
-```
-
-- Run `npm start`
+- Run `npm start` to start project
 
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
