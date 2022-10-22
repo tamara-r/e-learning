@@ -19,6 +19,9 @@ const Header = ({ onChange }) => {
 
   const { cartItems } = useSelector((state) => state.cart);
 
+  const currentPath = window.location.pathname
+
+
   return (
     <Fragment>
 
@@ -28,12 +31,12 @@ const Header = ({ onChange }) => {
       sx={{ bgcolor: deepPurple[500] }} 
       className='animation-header__background'>
       
-        <Toolbar sx={{ justifyContent: 'space-between'}}>
+        <Toolbar 
+          sx={{ justifyContent: 'space-between'}}>
           <Link to={'/'} style={{ color: 'white'}} className='text-orange'>
             <Typography style={{ fontSize: '18px' }}>CodeSkillSchool</Typography>
           </Link>
-          
-          <SearchBar onChange={onChange}/>
+          {currentPath === '/' ? <SearchBar onChange={onChange}/> : null }
           {/* <Box sx={{ flexGrow: 1 }} /> */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Link to={'/cart'} style={{ color: 'white'}} className='text-orange'>

@@ -49,7 +49,7 @@ const SearchBar = ({ onChange }) => {
 
   return (
     <Fragment>
-      <Search onChange={onChange}>
+      <Search onChange={onChange} >
         <SearchIconWrapper>
           <SearchIcon />
         </SearchIconWrapper>
