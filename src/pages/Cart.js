@@ -92,7 +92,6 @@ const Cart = () => {
             md={6}
             sx={{
               py: 10,
-              ml: 18,
             }}
           >
             <Toolbar />
@@ -118,7 +117,6 @@ const Cart = () => {
             md={6}
             sx={{
               pt: 10,
-              ml: 18,
             }}>
             <Typography 
               sx={{ pt: 10, fontSize: '30px', fontWeight: 'bold' }}>
