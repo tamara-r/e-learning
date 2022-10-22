@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 
-const LearningGoals = ({ goals }) => {
+const CourseGoals = ({ goals }) => {
 
   const goal = goals.map(goal => {
     return (
@@ -40,4 +40,4 @@ const LearningGoals = ({ goals }) => {
   )
 }
 
-export default LearningGoals;
+export default CourseGoals;
