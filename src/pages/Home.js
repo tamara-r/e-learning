@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Toolbar, Box } from '@mui/material';
-
 import { ToastContainer } from 'react-toastify';
+
 import Header from '../components/Header';
 import Products from '../components/Products';
 import MetaData from '../components/MetaData';
