@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Box } from '@mui/system';
 import React from 'react';
+import { Box } from '@mui/system';
 
 export const CartFooter = () => {
 
