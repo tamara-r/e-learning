@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
+
 import Ratings from './Ratings';
 
 const ProductDescription = ({ description, price, children, value, teacher }) => {
