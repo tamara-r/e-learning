@@ -6,6 +6,17 @@ import ProductCard from './ProductCard';
 
 const Products = ({ products }) => {
 
+  const product = products.map((product, index) => {
+    return (
+      <div 
+        style={{margin: '30px 60px 0 60px'}} 
+        key={`${product.id}--${index}`}>
+        <ProductCard product={product} key={product.id}/>
+      </div>
+      
+    );
+  })
+
   return (
     <Box>
       <Grid
@@ -14,17 +25,7 @@ const Products = ({ products }) => {
         columns={{ xs: 12, sm: 8, md: 12}}
       >
         
-        {products &&
-          products.map((product, index) => {
-            return (
-              <div 
-                style={{margin: '30px 60px 0 60px'}} 
-                key={`${product.id}--${index}`}>
-                <ProductCard product={product} key={product.id}/>
-              </div>
-              
-            );
-          })}
+        {products && product}
       </Grid>
     </Box>
   );
