@@ -25,12 +25,13 @@ const ProductDetails = () => {
   const id = params.id;
 
   const { products } = useSelector((state) => state.products);
+  const { cartItems } = useSelector((state) => state.cart);
 
   useEffect(() => {
     dispatch(getAllProducts());
   }, [dispatch, id, params]);
 
-  
+
   const addItemToCart = () => {
     dispatch(addToCart(id));
   };
@@ -38,6 +39,8 @@ const ProductDetails = () => {
   const removeItemFromCart = (id) => {
     dispatch(removeItem(id));
   };
+
+  let findItem = cartItems.find(item => item.product === products[id].id)
 
   return (
     <Container sx={{ display: 'flex' }}>
@@ -48,7 +51,7 @@ const ProductDetails = () => {
       <Box component="main" sx={{ p: 5 }}>
         <Toolbar />
         <Grid container >
-          
+
           { products[id] && (
             <ProductHeader>{products[id].name}</ProductHeader>
           )}
@@ -58,9 +61,9 @@ const ProductDetails = () => {
               <ProductImages srcMain={products[id].images[0].url} />
             )}
           </Grid>
-          
+
           { products[id] && (
-            
+
             <ProductDescription
               value={products[id].ratings}
               description={products[id].description}
@@ -76,22 +79,24 @@ const ProductDetails = () => {
                 >
                   <AddShoppingCartIcon />
                 </Button>
-                <Button
-                  variant="contained"
-                  color="error"
-                  onClick={() => removeItemFromCart(products[id].id)}
-                >
-                  <RemoveShoppingCartIcon />
-                </Button>
+                {findItem && (
+                  <Button
+                    variant="contained"
+                    color="error"
+                    onClick={() => removeItemFromCart(products[id].id)}
+                  >
+                    <RemoveShoppingCartIcon />
+                  </Button>
+                )}
               </Grid>
             </ProductDescription>
-            
+
           )}
 
         </Grid>
 
-        <Divider 
-          variant="fullWidth" 
+        <Divider
+          variant="fullWidth"
           sx={{ my: 3 }} />
 
         <Grid container>
@@ -106,7 +111,7 @@ const ProductDetails = () => {
             )}
           </Grid>
         </Grid>
-        
+
       </Box>
     </Container>
   );

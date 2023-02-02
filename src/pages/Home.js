@@ -44,7 +44,7 @@ const Home = () => {
   }
 
   return (
-    <Box sx={{ 
+    <Box sx={{
       display: 'flex',
       flexGrow: 1,
       justifyContent: 'center',
@@ -54,7 +54,7 @@ const Home = () => {
       <Box
         component="main"
         sx={{
-          display: 'flex', 
+          display: 'flex',
           flexGrow: 1,
           justifyContent: 'center',
           py: 10

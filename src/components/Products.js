@@ -8,12 +8,12 @@ const Products = ({ products }) => {
 
   const product = products.map((product, index) => {
     return (
-      <div 
-        style={{margin: '30px 60px 0 60px'}} 
+      <div
+        style={{margin: '30px 60px 0 60px'}}
         key={`${product.id}--${index}`}>
         <ProductCard product={product} key={product.id}/>
       </div>
-      
+
     );
   })
 
@@ -23,8 +23,14 @@ const Products = ({ products }) => {
         container
         spacing={{ xs: 1, sm: 3, md: 3 }}
         columns={{ xs: 12, sm: 8, md: 12}}
+        sx={{
+          display: 'flex',
+          flexGrow: 1,
+          justifyContent: 'center',
+          py: 2
+        }}
       >
-        
+
         {products && product}
       </Grid>
     </Box>
