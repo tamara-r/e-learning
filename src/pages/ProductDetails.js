@@ -79,7 +79,7 @@ const ProductDetails = () => {
                 >
                   <AddShoppingCartIcon />
                 </Button>
-                {findItem && (
+                {products[id] && findItem && (
                   <Button
                     variant="contained"
                     color="error"

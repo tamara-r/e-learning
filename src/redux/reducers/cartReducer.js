@@ -1,7 +1,8 @@
-import { 
-  ADD_TO_CART, 
+import {
+  ADD_TO_CART,
   REMOVE_FROM_CART,
-  REMOVE_ALL_FROM_CART
+  REMOVE_ALL_FROM_CART,
+  ADD_TO_SOLD
 } from '../../constants/cartConstants';
 
 export const cartReducer = (state = { cartItems: [] }, action) => {
@@ -33,6 +34,30 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
       return {
         ...state,
         cartItems: []
+      }
+    default:
+      return state;
+  }
+};
+
+export const soldReducer = (state = { soldItems: [] }, action) => {
+  switch (action.type) {
+
+    case ADD_TO_SOLD:
+      const soldItem = action.payload;
+      const soldExists = state.soldItems.find((i) => i.product === soldItem.product);
+      if (soldExists) {
+        return {
+          ...state,
+          soldItems: state.soldItems.map((i) =>
+            i.product === soldExists.product ? soldItem : i
+          ),
+        };
+      } else {
+        return {
+          ...state,
+          soldItems: [...state.soldItems, soldItem],
+        };
       }
     default:
       return state;

@@ -3,7 +3,7 @@ import React, { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
-import { 
+import {
   Toolbar,
   Box,
   ListSubheader,
@@ -19,7 +19,7 @@ import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { deepPurple } from '@mui/material/colors';
 
-import { removeItem, removeItems } from '../redux/actions/cartActions';
+import { removeItem, removeItems, addToSold } from '../redux/actions/cartActions';
 import MetaData from '../components/MetaData';
 import Header from '../components/Header';
 import { CartFooter } from '../components/CartFooter';
@@ -44,7 +44,7 @@ const Cart = () => {
   const { cartItems } = useSelector((state) => state.cart);
 
   useEffect(() => {
-  
+
   }, [dispatch]);
 
   const removeItemFromCart = (id) => {
@@ -52,6 +52,7 @@ const Cart = () => {
   };
 
   const handlePayment = () => {
+    dispatch(addToSold());
     dispatch(removeItems());
     navigate("/");
     toast.success('Happy Learning!', {
@@ -65,7 +66,7 @@ const Cart = () => {
         <ListItemIcon>
           <img src={item.image.url} style={{width: '36px', height: '36px'}} />
         </ListItemIcon>
-        <ListItemText 
+        <ListItemText
           primary={`${item.name} - $${item.price}`}
           sx={{ fontSize: '24px' }} />
         <ListItemButton onClick={() => removeItemFromCart(item.product)}>
@@ -76,9 +77,9 @@ const Cart = () => {
       </ListItem>
     )
   })
-  
+
   return (
-    <Box 
+    <Box
       sx={{ display: 'flex', justifyContent: 'center' }} >
       <MetaData title={'Cart'} />
       <Header />
@@ -100,15 +101,15 @@ const Cart = () => {
               component="nav"
               aria-labelledby="nested-list-subheader"
               subheader={
-                <ListSubheader 
-                  component="div" 
+                <ListSubheader
+                  component="div"
                   id="nested-list-subheader"
                   sx={{fontSize: '24px', fontWeight: 'bold', padding: 0}}>
                 Your Cart
                 </ListSubheader> }>
                 { item }
             </List>
-      
+
           </Box>
           <Box
             component="main"
@@ -118,7 +119,7 @@ const Cart = () => {
             sx={{
               pt: 10,
             }}>
-            <Typography 
+            <Typography
               sx={{ pt: 10, fontSize: '30px', fontWeight: 'bold' }}>
               Total Price
             </Typography>
@@ -138,14 +139,14 @@ const Cart = () => {
       )
       : (
         <Fragment>
-          <Typography 
+          <Typography
             sx={{ pt: 30, fontSize: '30px', fontWeight: 'bold' }}>
             Your Cart is Empty!
           </Typography>
           <CartFooter />
         </Fragment>
       )}
-      
+
     </Box>
   )
 }

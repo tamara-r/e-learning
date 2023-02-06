@@ -1,7 +1,8 @@
-import { 
-  ADD_TO_CART, 
+import {
+  ADD_TO_CART,
   REMOVE_FROM_CART,
-  REMOVE_ALL_FROM_CART
+  REMOVE_ALL_FROM_CART,
+  ADD_TO_SOLD
 } from '../../constants/cartConstants';
 
 import products from '../../data/products.json';
@@ -32,11 +33,23 @@ export const removeItem = (id) => async (dispatch, getState) => {
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 };
 
+export const addToSold = () => async (dispatch, getState) => {
+  let items = []
+  let sold = localStorage.setItem('soldItems', JSON.stringify(getState().cart.cartItems))
+  let soldItems = structuredClone(sold)
 
+  items = items.push(soldItems)
+
+  dispatch({
+    type: ADD_TO_SOLD,
+    payload: items
+  })
+}
 export const removeItems = () => async (dispatch, getState) => {
+
   dispatch({
     type: REMOVE_ALL_FROM_CART,
   });
-  
+
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 };
